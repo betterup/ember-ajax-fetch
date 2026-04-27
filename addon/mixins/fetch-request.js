@@ -74,6 +74,7 @@ export default Mixin.create({
       headers: {
         ...(hash.headers || {}),
       },
+      credentials: get(this, 'credentials') || undefined,
     };
 
     const abortController = new AbortController();
